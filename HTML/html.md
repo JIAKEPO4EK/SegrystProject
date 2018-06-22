@@ -3,20 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Projec</title>
-		<link rel="stylesheet" href="Project.css">
 	</head>
 	<body>
-         <script>
-           'use strict'
-             function Complete()
-             {
-                var Elem="\nПол: " + document.Sel1.Sex.value +
-                   "\nРост: " + document.Sel1.Height.value +
-                   "\nВес: " + document.Sel1.Weight.value +
-                   "\nВозраст: " + document.Sel1.Age.value;
-               alert(Elem);
-          }
-         </script>
+		<script src="script"></script>
      <h1>Заполните анкету</h1>
      <FORM NAME="Sel1">
     <TABLE>
