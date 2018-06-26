@@ -1,4 +1,4 @@
- <script name="script">
+<script name="script">
       'use strict'
        function Complete()
     {
