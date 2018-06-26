@@ -3,73 +3,59 @@
     <head>
         <meta charset="utf-8">
         <title>Project</title>
-        <link href="../CSS/Document.css" rel="stylesheet">
+        <link href="../CSS/Documen.css" rel="stylesheet">
     </head>
     <body>
       <div class="MDA">
         <h1 class="dcdc">Заполните анкету</h1>
+        <h4 class="dcdc">После того,как вы заполните информацию,нажмите "Готово".А дальше выбирайте пол.</h4>
         <FORM NAME="Sel1" id="tytyty">
           <TABLE>
               <TR>
-                    <TD>
-                        <B>
-                           Пол:
-                        <B>
-                    </TD>
-                    <TD> 
-                        <INPUT NAME="Sex" SIZE=13 list="идентификатор"
+                  <TD>
+                      <B>
+                          Рост:
+                      <B>
+                  </TD>
+                  <TD>
+                      <INPUT NAME="Height" SIZE=13
                         onBlur="this.value=this.value.toUpperCase()">
-                        <datalist id="идентификатор">
-                          <option value="Мужской">
-                          <option value="Женский">
-                        </datalist>
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <B>
-                            Рост:
-                        <B>
-                    </TD>
-                    <TD>
-                        <INPUT NAME="Height" SIZE=13
-                         onBlur="this.value=this.value.toUpperCase()">
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <B>
-                            Вес:
-                        <B>
-                    </TD>
-                    <TD>
-                       <INPUT NAME="Weight" SIZE=13 
-                          onBlur="this.value=CheckAge(this.value)"
-                          onFocus="this.select()">
+                  </TD>
+              </TR>
+              <TR>
+                  <TD>
+                      <B>
+                           Вес:
+                      <B>
+                  </TD>
+                  <TD>
+                     <INPUT NAME="Weight" SIZE=13 
+                        onBlur="this.value=CheckAge(this.value)"
+                        onFocus="this.select()">
   
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <B>
-                            Возраст:
-                        <B>
-                    </TD>
-                    <TD>
-                        <INPUT NAME="Age" SIZE=13>
-                    </TD>
-                </TR>
+                  </TD>
+              </TR>
+              <TR>
+                  <TD>
+                      <B>
+                          Возраст:
+                      <B>
+                  </TD>
+                  <TD>
+                      <INPUT NAME="Age" SIZE=13>
+                  </TD>
+              </TR>
           </TABLE>
           <INPUT TYPE="button" VALUE="Готово" onClick="Complete()">
           <INPUT TYPE="reset" VALUE="Сброс">
-           <input type='button' value = 'Для женщин' onClick = 'changeImage()' />
-          <input type='button' value = 'Для мужчин' onClick = 'Imagechang()' />
+           <input type='button' value = 'Женщина' onClick = 'changeImage()' />
+          <input type='button' value = 'Мужчина' onClick = 'Imagechang()' />
         </FORM>
       </div>
       <div id="img">
         <img name = 'img' src = 'image1.jpg' />  
       </div>  
 
-       <script src="../JS/script.js">
+        <script src="../JS/script.js">
     </body>
 </html>
